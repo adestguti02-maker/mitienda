@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button btnComenzar = findViewById(R.id.btnComenzar);
 
-        // Al pulsar "Comenzar" se abre la ventana del formulario
+
         btnComenzar.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, RegistroActivity.class);
             startActivity(intent);

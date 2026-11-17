@@ -16,7 +16,7 @@ public class confirmacionactivity extends AppCompatActivity {
         TextView tvDatos = findViewById(R.id.tvDatos);
         Button btnSalir = findViewById(R.id.btnSalir);
 
-        // Se reciben los datos enviados desde el formulario
+
         String tendero = getIntent().getStringExtra("tendero");
         String tienda = getIntent().getStringExtra("tienda");
         String telefono = getIntent().getStringExtra("telefono");
@@ -31,7 +31,7 @@ public class confirmacionactivity extends AppCompatActivity {
                         "Controlará: " + controles
         );
 
-        // Cierra todas las ventanas y sale de la app
+
         btnSalir.setOnClickListener(v -> finishAffinity());
     }
 }

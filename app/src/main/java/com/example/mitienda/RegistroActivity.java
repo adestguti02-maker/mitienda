@@ -40,11 +40,11 @@ public class RegistroActivity extends AppCompatActivity {
                 return;
             }
 
-            // Tipo de tienda seleccionado en el RadioGroup
+
             RadioButton seleccionado = findViewById(rgTipo.getCheckedRadioButtonId());
             String tipo = seleccionado.getText().toString();
 
-            // Opciones marcadas en los CheckBox
+
             StringBuilder controles = new StringBuilder();
             if (cbInventario.isChecked()) controles.append("Inventario, ");
             if (cbVentas.isChecked()) controles.append("Ventas, ");
@@ -55,11 +55,11 @@ public class RegistroActivity extends AppCompatActivity {
             if (controles.length() == 0) {
                 controlesTexto = "Ninguna";
             } else {
-                // Quita la última coma y espacio
+
                 controlesTexto = controles.substring(0, controles.length() - 2);
             }
 
-            // Se envían los datos a la ventana de confirmación
+
             Intent intent = new Intent(RegistroActivity.this, confirmacionactivity.class);
             intent.putExtra("tendero", tendero);
             intent.putExtra("tienda", tienda);
