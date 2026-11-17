@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8E1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inscripción de tu tienda"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#E65100" />
+
+        <EditText
+            android:id="@+id/etTendero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Nombre del tendero"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etTienda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de la tienda"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teléfono"
+            android:inputType="phone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Tipo de tienda"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgTipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbAbarrotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Abarrotes" />
+
+            <RadioButton
+                android:id="@+id/rbPanaderia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Panadería" />
+
+            <RadioButton
+                android:id="@+id/rbPapeleria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Papelería" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="¿Qué quieres controlar?"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/cbInventario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inventario" />
+
+        <CheckBox
+            android:id="@+id/cbVentas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ventas" />
+
+        <CheckBox
+            android:id="@+id/cbFiados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiados" />
+
+        <CheckBox
+            android:id="@+id/cbReportes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reportes" />
+
+        <Button
+            android:id="@+id/btnInscribirme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Inscribirme" />
+    </LinearLayout>
+</ScrollView>
